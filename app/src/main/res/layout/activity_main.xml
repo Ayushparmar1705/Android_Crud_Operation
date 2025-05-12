@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Name -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:hint="Enter Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Age -->
+        <EditText
+            android:id="@+id/editTextAge"
+            android:hint="Enter Age"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Date of Birth -->
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Gender -->
+        <TextView
+            android:text="Gender"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:text="Male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:text="Female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/radioOther"
+                android:text="Other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <!-- Hobbies -->
+        <TextView
+            android:text="Hobbies"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkBoxReading"
+            android:text="Reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMusic"
+            android:text="Music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSports"
+            android:text="Sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- AutoCompleteTextView for City -->
+        <TextView
+            android:text="Select City"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start typing country name" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+        <Button
+            android:id="@+id/golist"
+            android:text="Show List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>
